@@ -1,0 +1,103 @@
+.container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  background: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem 1rem;
+  color: #1e293b;
+}
+
+.title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #3730a3;
+}
+
+.dropdownWrapper {
+  position: relative;
+  width: 280px;
+}
+
+.dropdownButton {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  border: 2px solid #6366f1;
+  border-radius: 12px;
+  background: white;
+  color: #3730a3;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dropdownButton:hover,
+.dropdownButton:focus {
+  background-color: #e0e7ff;
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.caret {
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: #3730a3 transparent transparent transparent;
+  margin-left: 0.75rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dropdownList {
+  margin-top: 8px;
+  padding: 0;
+  list-style: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(99, 102, 241, 0.25);
+  background: white;
+  border: 2px solid #6366f1;
+  max-height: 180px;
+  overflow-y: auto;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+}
+
+.dropdownItem {
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  user-select: none;
+  color: #4b5563;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownItem:hover,
+.highlighted {
+  background-color: #c7d2fe;
+  color: #3730a3;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 105%;
+  width: 260px;
+  background: white;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.25);
+  user-select: none;
+  pointer-events: none;
+  z-index: 110;
+  margin-top: 0.25rem;
+}
