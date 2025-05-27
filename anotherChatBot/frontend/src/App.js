@@ -13,6 +13,24 @@ const apiOptions = [
     url: "http://localhost:8001/queryendpoint",
     description: "This will send API call to FastAPI server",
   },
+  {
+    label: "Fastify",
+    value: "fastify",
+    url: "http://localhost:8002/queryendpoint",
+    description: "This will send API call to Fastify server",
+  },
+  {
+    label: "Flask",
+    value: "flask",
+    url: "http://localhost:8003/queryendpoint",
+    description: "This will send API call to Flask server",
+  },
+  {
+    label: "Django",
+    value: "django",
+    url: "http://localhost:8004/queryendpoint",
+    description: "This will send API call to Django server",
+  },
 ];
 
 export default function App() {
